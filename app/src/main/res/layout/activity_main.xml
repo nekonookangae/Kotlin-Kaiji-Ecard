@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/playerCard1"
+        android:layout_width="89dp"
+        android:layout_height="134dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        app:srcCompat="@drawable/citizen"
+        app:layout_constraintEnd_toStartOf="@+id/playerCard2"
+        app:layout_constraintTop_toTopOf="@+id/playerCard3"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp" />
+
+    <ImageButton
+        android:id="@+id/playerCard2"
+        android:layout_width="89dp"
+        android:layout_height="134dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        app:srcCompat="@drawable/citizen"
+        app:layout_constraintEnd_toStartOf="@+id/playerCard3"
+        app:layout_constraintTop_toTopOf="@+id/playerCard3"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp" />
+
+    <ImageButton
+        android:id="@+id/playerCard3"
+        android:layout_width="89dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="240dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/citizen" />
+
+    <ImageButton
+        android:id="@+id/playerCard4"
+        android:layout_width="89dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        app:srcCompat="@drawable/citizen"
+        app:layout_constraintStart_toEndOf="@+id/playerCard3"
+        app:layout_constraintTop_toTopOf="@+id/playerCard3" />
+
+    <ImageButton
+        android:id="@+id/playerCard5"
+        android:layout_width="89dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        app:srcCompat="@drawable/citizen"
+        app:layout_constraintStart_toEndOf="@+id/playerCard4"
+        app:layout_constraintTop_toTopOf="@+id/playerCard3" />
+
+    <ImageView
+        android:id="@+id/cpuBoard"
+        android:layout_width="85dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/reverse_inv" />
+
+    <ImageButton
+        android:id="@+id/cpuCard1"
+        android:layout_width="74dp"
+        android:layout_height="86dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/cpuCard3"
+        app:layout_constraintEnd_toStartOf="@+id/cpuCard2"
+        app:srcCompat="@drawable/reverse_inv" />
+
+    <ImageButton
+        android:id="@+id/cpuCard2"
+        android:layout_width="74dp"
+        android:layout_height="86dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/cpuCard3"
+        app:layout_constraintEnd_toStartOf="@+id/cpuCard3"
+        app:srcCompat="@drawable/reverse_inv" />
+
+    <ImageButton
+        android:id="@+id/cpuCard3"
+        android:layout_width="74dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginBottom="130dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/playerCard3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/reverse_inv" />
+
+    <ImageButton
+        android:id="@+id/cpuCard4"
+        android:layout_width="74dp"
+        android:layout_height="86dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/cpuCard3"
+        app:layout_constraintStart_toEndOf="@+id/cpuCard3"
+        app:srcCompat="@drawable/reverse_inv" />
+
+    <ImageButton
+        android:id="@+id/cpuCard5"
+        android:layout_width="74dp"
+        android:layout_height="86dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/cpuCard3"
+        app:layout_constraintStart_toEndOf="@+id/cpuCard4"
+        app:srcCompat="@drawable/reverse_inv" />
+
+    <ImageView
+        android:id="@+id/playerBoard"
+        android:layout_width="85dp"
+        android:layout_height="101dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cpuBoard"
+        app:srcCompat="@drawable/reverse" />
+
+    <TextView
+        android:id="@+id/cpuWinsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:color/black"
+        android:text="@string/com_wins"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/cpuBoard"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerWinsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/black"
+        android:text="@string/player_wins"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/playerBoard"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/limittimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:text="@string/timer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/playerCard3"
+        app:layout_constraintEnd_toStartOf="@+id/playerBoard"
+        app:layout_constraintStart_toEndOf="@+id/cpuBoard"
+        app:layout_constraintTop_toBottomOf="@+id/cpuCard3" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/next_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/start_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="384dp"
+        android:layout_height="276dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:text="Result"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cpuCard3"
+        app:layout_constraintVertical_bias="0.419"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/resultText2"
+        android:layout_width="336dp"
+        android:layout_height="101dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="@+id/resultText"
+        app:layout_constraintStart_toStartOf="@+id/resultText"
+        app:layout_constraintTop_toTopOf="@+id/resultText"
+        tools:visibility="invisible"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
